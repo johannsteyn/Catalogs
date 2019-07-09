@@ -1,0 +1,27 @@
+h1, h2{
+        text-align: center;
+        color: black;
+        border-style: solid;
+        border-color: lightblue;
+}
+body{
+        text-align: left;
+        font-family: "Times New Roman", Times, Serif;
+        background-image: url("background.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        margin-right: 200px;
+}
+a:link{
+        color: red;
+}
+a:visited{
+        color: green;
+}
+a:hover{
+        color: hotpink;
+}
+a:active{
+        color: blue;
+}
+
