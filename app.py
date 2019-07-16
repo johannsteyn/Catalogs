@@ -70,8 +70,8 @@ def gconnect():
         response = make_response(json.dumps(result.get('error')), 500)
         response.headers['Content-Type'] = 'application/json'
         return response
- google_id = credentials.id_token['sub']
-   if result['user_id'] != google_id:
+        google_id = credentials.id_token['sub']
+    if result['user_id'] != google_id:
         response = make_response(
             json.dumps("Token's user ID doesn't match given user ID."), 401)
         response.headers['Content-Type'] = 'application/json'
@@ -277,7 +277,7 @@ def showSportItem(category_id):
     items = session.query(SportItem).all()
     if 'username' not in login_session:
         return render_template('catalog.html', items=items, category=category, creator=creator)
- else:
+    else:
         return render_template('sportitem.html', items=items, category=category, creator=creator)
 
 
